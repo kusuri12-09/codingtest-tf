@@ -3,17 +3,17 @@
 
 int main() {
 	int num;
-	int numArr[1000000];
+	int input;
 	int numMax = -1000000, numMin = 1000000;
 	scanf("%d", &num);
 
 	for (int i = 0; i < num; i++) {
-		scanf("%d", &numArr[i]);
-		if (numMax < numArr[i]) {
-			numMax = numArr[i];
+		scanf("%d", &input);
+		if (numMax <= input) {
+			numMax = input;
 		}
-		if (numMin > numArr[i]) {
-			numMin = numArr[i];
+		if (numMin >= input) {
+			numMin = input;
 		}
 	}
 

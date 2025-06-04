@@ -6,14 +6,14 @@ public class Main {
 
         int n = sc.nextInt();
         String str = sc.next();
-        int hash = 0;
-        int pow = 1;
+        long sum = 0;
+        long pow = 1;
 
         for (int i = 0; i < n; i++) {
-            hash += (str.charAt(i) - 'a' + 1) * pow;
-            pow *= 31;
+            sum += ((str.charAt(i) - 'a' + 1) * pow);
+            pow = (pow * 31) % 1234567891;
         }
 
-        System.out.println(hash);
+        System.out.println(sum % 1234567891);
     }
 }

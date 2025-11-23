@@ -1,1 +1,1 @@
-print("YES" if input().startswith('555') else "NO")
+print("YES"if input()[:3]=='555'else"NO")

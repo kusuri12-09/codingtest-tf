@@ -1,0 +1,1 @@
+print("F" if sum(list(map(int, input().split()))) > 8 else "S")
